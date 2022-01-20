@@ -3,8 +3,6 @@ import simplejson as json
 
 import requests
 
-from .defs import EventTypes
-
 
 class Config:
     ingest_url: str
@@ -50,7 +48,7 @@ def set_config(new_config: Config):
 EVENT_BUFFER = []
 
 
-def track(event_name: EventTypes, data: Dict):
+def track(event_name: str, data: Dict):
     """Track a single analytics event.
 
     If `config.buffered` is set, the event won't be sent immediately, but rather

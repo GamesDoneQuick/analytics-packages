@@ -8,5 +8,9 @@ setuptools.setup(
     author="GDQ",
     author_email="",
     packages=setuptools.find_packages(),
+    install_requires=[
+        "requests>=2.25.1",
+        "simplejson>=3.17.3",
+    ],
     zip_safe=False,
 )
