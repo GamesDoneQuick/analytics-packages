@@ -1,16 +1,20 @@
-import setuptools
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
-setuptools.setup(
+setup(
     name="tracker_analytics",
     version="0.1.0",
     description="Analytics tracking library for GDQ's donation tracker and more",
-    url="#",
-    author="GDQ",
+    url="",
+    author="",
     author_email="",
-    packages=setuptools.find_packages(),
+    py_modules=["analytics"],
+    scripts=["analytics.py"],
     install_requires=[
-        "requests>=2.25.1",
-        "simplejson>=3.17.3",
+        "requests>=2.0.0",
+        "simplejson>=3.0.0",
     ],
     zip_safe=False,
 )
