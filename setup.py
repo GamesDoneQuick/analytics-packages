@@ -4,7 +4,7 @@ except ImportError:
     from distutils.core import setup
 
 setup(
-    name="tracker_analytics",
+    name="analytics",
     version="0.1.0",
     description="Analytics tracking library for GDQ's donation tracker and more",
     url="",
