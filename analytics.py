@@ -32,6 +32,7 @@ class Config:
         self.latest_path = latest_path
         self.test_path = test_path
         self.test_mode = test_mode
+        self.no_emit = no_emit
 
         resolved_path = test_path if test_mode else path
         self.ingest_url = f"{ingest_host}{resolved_path}"
